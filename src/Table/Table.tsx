@@ -308,8 +308,7 @@ export default function Table() {
       setChips((c) => c + newPlayerWinnings + newSplitWinnings);
     }
   }, [
-    dealerHand,
-    getResult,
+    // getResult,
     playerBet,
     playerHand,
     playerScore,
