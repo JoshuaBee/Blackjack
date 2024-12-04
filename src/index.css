@@ -1,0 +1,58 @@
+:root {
+  --color-primary-1: oklch(90% 0.213 140);
+  --color-primary-2: oklch(80% 0.257 140);
+  --color-primary-3: oklch(70% 0.225 140);
+  --color-primary-4: oklch(60% 0.193 140);
+  --color-primary-5: oklch(50% 0.16 140);
+  --color-primary-6: oklch(40% 0.128 140);
+  --color-primary-7: oklch(30% 0.096 140);
+  --color-primary-8: oklch(20% 0.064 140);
+  --color-primary-9: oklch(10% 0.032 140);
+
+  --color-primary: var(--color-primary-5);
+  --color-primary-text: var(--color-primary-1);
+
+  --color-background: var(--color-primary-2);
+  --color-background-text: var(--color-primary-9);
+}
+
+@media (color-gamut: p3) {
+  :root {
+    --color-primary-1: oklch(90% 0.238 140);
+    --color-primary-2: oklch(80% 0.302 140);
+    --color-primary-3: oklch(70% 0.265 140);
+    --color-primary-4: oklch(60% 0.227 140);
+    --color-primary-5: oklch(50% 0.189 140);
+    --color-primary-6: oklch(40% 0.151 140);
+    --color-primary-7: oklch(30% 0.113 140);
+    --color-primary-8: oklch(20% 0.075 140);
+    --color-primary-9: oklch(10% 0.038 140);
+  }
+}
+
+@media (color-gamut: rec2020) {
+  :root {
+    --color-primary-1: oklch(90% 0.285 140);
+    --color-primary-2: oklch(80% 0.314 140);
+    --color-primary-3: oklch(70% 0.275 140);
+    --color-primary-4: oklch(60% 0.236 140);
+    --color-primary-5: oklch(50% 0.196 140);
+    --color-primary-6: oklch(40% 0.157 140);
+    --color-primary-7: oklch(30% 0.118 140);
+    --color-primary-8: oklch(20% 0.078 140);
+    --color-primary-9: oklch(10% 0.04 140);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-primary-8);
+    --color-background-text: var(--color-primary-1);
+  }
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

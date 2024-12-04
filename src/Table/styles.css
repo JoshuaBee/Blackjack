@@ -1,0 +1,6 @@
+.table {
+  align-items: center;
+  background-color: var(--color-background);
+  display: flex;
+  min-height: 100vh;
+}
